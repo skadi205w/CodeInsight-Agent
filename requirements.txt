@@ -1,0 +1,20 @@
+# ---------------- Web 框架 ----------------
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# ---------------- HTTP 客户端（调用 Ollama）----------------
+httpx>=0.27.0
+
+# ---------------- 向量库 ----------------
+chromadb>=0.5.0
+
+# ---------------- Embedding ----------------
+# 默认后端 sentence-transformers：本地跑 bge-small-zh
+# 如果改用 EMBEDDING_BACKEND=ollama，这一行可以不装（能省掉几百 MB 的 torch）
+sentence-transformers>=3.0.0
+
+# ---------------- 其他 ----------------
+python-dotenv>=1.0.0
+numpy>=1.26.0
